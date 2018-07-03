@@ -1,0 +1,35 @@
+svg {
+	margin: 0 auto;
+	display: block;
+}
+
+input { 
+	margin: 20px auto;
+	display: block;
+}
+
+.tooltip {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+	background-color: lightsteelblue;
+	border: 5px solid blue;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.tooltip p {
+	margin: 0;
+	text-align: center;
+}
+/*create a 'triangle' on edge of border to look like speech bubble*/
+.tooltip:before {
+	content: "";
+	position: absolute;
+	border: 12px solid transparent;
+	border-bottom-color: blue;
+	top: -30px;
+	left: 50%;
+	margin-left: -6px;
+}
+
